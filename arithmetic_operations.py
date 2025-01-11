@@ -9,4 +9,4 @@ def perform_operation(num1, num2, operation):
         if num2 == 0:
             return "Error: undefined"
         return num1 / num2
-print(perform_operation(5, 5, "add"))
+perform_operation()
