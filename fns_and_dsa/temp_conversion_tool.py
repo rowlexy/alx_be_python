@@ -14,6 +14,6 @@ def main():
         conv_temp = convert_to_fahrenheit(temperature)
         print(f"{temperature}°F is {conv_temp}°C")
     else:
-        print("Invalid Entry, insert (C/F)")
+        print("Invalid temperature. Please enter a numeric value.")
 if __name__ == "__main__":
     main()
