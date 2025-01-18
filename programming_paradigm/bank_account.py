@@ -17,6 +17,3 @@ class BankAccount:
             print(f"Withdrew: ${result}")
     def display_balance(self):
         print(f"Current Balance: ${self.account_balance:.2f}")
-        
-account = BankAccount()
-account.display_balance()
