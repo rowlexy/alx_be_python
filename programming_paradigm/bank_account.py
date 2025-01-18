@@ -19,4 +19,4 @@ class BankAccount:
         print(f'["Current balance:"] ${self.account_balance}')
         
 account = BankAccount(100)
-account.display_balance()
+account.display_balance(["Current balance:"])
