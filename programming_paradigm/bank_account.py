@@ -11,7 +11,7 @@ class BankAccount:
         if amount > self.account_balance:
             return "Insufficient funds."
         elif amount <= 0:
-            print("You can only withdraw an amount greater than zero")
+            return "Insufficient funds."
         else:
             self.account_balance -= amount
             return f"Withdrew: ${amount:.2f}"
