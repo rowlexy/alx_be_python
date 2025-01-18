@@ -16,7 +16,7 @@ class BankAccount:
             result = self.account_balance - amount
             print(f"Withdrew: ${result}")
     def display_balance(self):
-        print(f"[Current balance:] ${self.account_balance}")
+        print(f'["Current balance:"] ${self.account_balance}')
         
 account = BankAccount(100)
 account.display_balance()
