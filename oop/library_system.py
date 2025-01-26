@@ -19,8 +19,16 @@ class PrintBook(Book):
         return f"{self.title} by {self.author}, Page Count: {self.page_count}"
 
 class Library:
+    def __init__(self):
+        self.books = []
+
     def add_book(self, book):
-        self.book = book
+         if isinstance(book, Book):
+            self.books.append(book)
 
     def list_books(self):
-        print(f"{self.book}")
+        if not self.books:
+            print("No books in the library.")
+        else:
+            for book in self.books:
+                print(book.details())
